@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">shaw-autocut</title>
+  <desc id="desc">A waveform with a pause removed by a diagonal cut.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#152b45"/><stop offset="1" stop-color="#0b1222"/></linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#43d9c0"/><stop offset="1" stop-color="#7bb7ff"/></linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#bg)"/>
+  <path d="M20 60h12m7-15v30m9-43v56m9-36v16m15-9h8m9-25v52m10-37v22m6-11h7" fill="none" stroke="url(#wave)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M62 79 77 42" stroke="#ffb064" stroke-width="5" stroke-linecap="round"/>
+</svg>

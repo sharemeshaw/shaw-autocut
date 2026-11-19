@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shaw-autocut"
+version = "0.1.2"
+description = "口播视频自动去静音、识别字幕、人工审核、导出 SRT / 烧录字幕；可作为 Agent Skill 使用"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+funasr = ["funasr", "modelscope", "torch", "torchaudio"]
+whisper = ["faster-whisper"]
+dev = ["pytest"]
+
+[project.scripts]
+shaw-autocut = "shaw_autocut.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+shaw_autocut = ["*.html"]
